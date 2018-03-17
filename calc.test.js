@@ -11,4 +11,8 @@ const addition = require('./calc');
    test('adds "1.43+2.5" to equal 3', () => {
     expect(addition("1.43+2.5")).toBe( 3.9299999999999997);
    }); 
+   //negative
+   test('adds "-1+2" to equal 1', () => {
+    expect(addition("-1+2")).toBe(1);
+   }); 
    
