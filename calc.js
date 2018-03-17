@@ -10,20 +10,13 @@ var res = str.split("");
 isAddition(res, str);   
 isSubtraction(res.str);    
 isMult(res,str);
-
+isModule(res,str);
 //------------Division --------------------------
 let dev = res.filter(item =>
   item == "/");
   if (dev.length !=0) {
    console.log("divide()");
    }
-//------------Module --------------------------
-let mod = res.filter(item =>
-  item == "%");
-  if (mod.length !=0) {
-   console.log("module()");
-   }
-
   });              
 }//readFromConsole()
 //--------------- Addition functions ---------------------------------
@@ -65,5 +58,19 @@ function isMult(res,str){
 function mult(str){
  } 
 //---------------------------------------------------------------------------
+//--------------- Module functions ---------------------------------
+//IsModule
+function isModule(res,str){
+  let mod = res.filter(item =>item == "-");
+    if (mod.length !=0) {
+      mod(str);
+    }
+    else return ;
+}
+//Module
+function mod(str){
+ } 
+//---------------------------------------------------------------------------
+
 readFromConsoleAndSplit(); 
 
