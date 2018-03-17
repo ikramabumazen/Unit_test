@@ -22,10 +22,21 @@ let sub = res.filter(item =>
   if (sub.length !=0) {
    console.log("sub()");
    }
-                
-
+//------------Multiplication --------------------------
+let mult = res.filter(item =>
+  item == "*");
+  if (mult.length !=0) {
+   console.log("multiply()");
+   }             
+//------------Multiplication --------------------------
+let mult = res.filter(item =>
+  item == "*");
+  if (mult.length !=0) {
+   console.log("multiply()");
+   }
 
   });              
 }//readFromConsole()
 
 readFromConsoleAndSplit();
+
