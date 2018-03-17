@@ -23,8 +23,9 @@ let sub = res.filter(item =>
    console.log("sub()");
    }
                 
-  }); 
-  
+
+
+  });              
 }//readFromConsole()
 
 readFromConsoleAndSplit();
