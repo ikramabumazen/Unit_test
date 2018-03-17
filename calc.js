@@ -1,17 +1,19 @@
 
 var stdin = process.openStdin();
-
+var res =[];
 function readFromConsoleAndSplit(){
 stdin.addListener("data", function(d) {
   let str = d.toString().trim();
 var res = str.split("");
 
+
  // filter res array according operation
-isAddition(res, str);   
+isAddition(res,str); 
+/*  
 isSubtraction(res.str);    
 isMult(res,str);
 isModule(res,str);
-isDiv(res,str);
+isDiv(res,str);*/
   });              
 }//readFromConsole()
 
@@ -21,6 +23,7 @@ isDiv(res,str);
 //Isaddition 
 function isAddition(res,str){
   let sum = res.filter(item =>item == "+");
+
     if (sum.length !=0) {
       addition(str);
     }
@@ -28,6 +31,9 @@ function isAddition(res,str){
 }
 //addition
 function addition(str){
+  let SplitNumbers = str.split("+");
+  let sum = parseFloat(SplitNumbers[0])+parseFloat(SplitNumbers[1]);
+  console.log("sum="+sum);
  } 
 //---------------------------------------------------------------------------
 //--------------- Subtraction functions ---------------------------------
@@ -41,6 +47,7 @@ function isSubtraction(res,str){
 }
 //subtraction
 function sub(str){
+  console.log("hi from sub method ");
  } 
 //---------------------------------------------------------------------------
 //--------------- Multiplication functions ---------------------------------
