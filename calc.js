@@ -11,14 +11,12 @@ isAddition(res, str);
 isSubtraction(res.str);    
 isMult(res,str);
 isModule(res,str);
-//------------Division --------------------------
-let dev = res.filter(item =>
-  item == "/");
-  if (dev.length !=0) {
-   console.log("divide()");
-   }
+isDiv(res,str);
   });              
 }//readFromConsole()
+
+
+
 //--------------- Addition functions ---------------------------------
 //Isaddition 
 function isAddition(res,str){
@@ -69,6 +67,19 @@ function isModule(res,str){
 }
 //Module
 function mod(str){
+ } 
+//---------------------------------------------------------------------------
+//---------------Division functions ---------------------------------
+//IsModule
+function isDiv(res,str){
+  let div = res.filter(item =>item == "-");
+    if (div.length !=0) {
+      div(str);
+    }
+    else return ;
+}
+//Module
+function div(str){
  } 
 //---------------------------------------------------------------------------
 
