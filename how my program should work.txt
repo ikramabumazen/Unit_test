@@ -1,0 +1,17 @@
+
+1-It is calculator app
+2-Do 5 operations : + , - , * , / , % 
+3-input will be string as following : 
+
+*basic operation is : num1 operation num2  ( only take max of two numbers )
+**user can enter : 1- "" _ empty string => return nothing  
+                 2- "1" _ one number => return this number 
+                 3- "1+2" _ two numbers  => return result
+                 4- "-1+2" _ negetive numbers => return result 
+                 5- numbers entered must be less than 1000 => if not will return exception
+
+4- numbers split by the prev. specific operations (+,-,*,/,%) 
+5- according to operation , a specific function will execute ( sum , sub , mult , div , mod) 
+6- each operation has its test cases.
+7- if user entered more than two nubers (and one operation) throw an exception with this operation.     
+
