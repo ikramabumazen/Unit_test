@@ -1,16 +1,14 @@
 
-function readFromConsole(){
+function readFromConsoleAndSplit(){
 var stdin = process.openStdin();
 stdin.addListener("data", function(d) {
-  //console.log(d.toString());
-  let userEntered= (d.toString().trim() );
-   //console.log("you Entered :[" +userEntered+ "]");
+  let str = d.toString().trim();
 
-return d.toString() ;
+// split by ""
+var res = str.split("");
+console.log(res);
        
   });  
 }//readFromConsole()
 
-let readString =readFromConsole();
-
-console.log( readString);
+readFromConsole();
