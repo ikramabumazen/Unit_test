@@ -45,7 +45,22 @@ function isAddition(res,str){
     }
     else return ;
 }
-
+//addition
+function addition(str){
+ } 
+//---------------------------------------------------------------------------
+//--------------- Subtraction functions ---------------------------------
+//Isaddition 
+function isSubtraction(res,str){
+  let sub = res.filter(item =>item == "-");
+    if (sub.length !=0) {
+      sub(str);
+    }
+    else return ;
+}
+//addition
+function sub(str){
+ } 
 //---------------------------------------------------------------------------
 
 readFromConsoleAndSplit(); 
