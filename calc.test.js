@@ -1,5 +1,10 @@
 const addition = require('./calc');
-
-test('adds "1+2" to equal 3', () => {
- expect(addition("1+2")).toBe(3);
-}); 
+   //one digit
+    test('adds "1+2" to equal 3', () => {
+    expect(addition("1+2")).toBe(3);
+    }); 
+   //multi digits
+   test('adds "100+2" to equal 102', () => {
+    expect(addition("100+2")).toBe(102);
+   }); 
+   
