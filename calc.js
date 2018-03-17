@@ -28,11 +28,12 @@ let mult = res.filter(item =>
   if (mult.length !=0) {
    console.log("multiply()");
    }             
-//------------Multiplication --------------------------
-let mult = res.filter(item =>
-  item == "*");
-  if (mult.length !=0) {
-   console.log("multiply()");
+
+//------------Division --------------------------
+let dev = res.filter(item =>
+  item == "/");
+  if (dev.length !=0) {
+   console.log("divide()");
    }
 
   });              
