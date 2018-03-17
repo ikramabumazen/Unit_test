@@ -16,11 +16,15 @@ var res = str.split("");
                 if (sum.length !=0) {
                   console.log("sum()");
                 } 
-
+//-----------Subtraction ------------------------------
+let sub = res.filter(item =>
+  item == "-");
+  if (sub.length !=0) {
+   console.log("sub()");
+   }
                 
   }); 
+  
 }//readFromConsole()
-
-
 
 readFromConsoleAndSplit();
