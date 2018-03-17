@@ -1,10 +1,11 @@
+module.exports = addition;
 
 var stdin = process.openStdin();
 var res =[];
 function readFromConsoleAndSplit(){
 stdin.addListener("data", function(d) {
   let str = d.toString().trim();
-var res = str.split("");
+  var res = str.split("");
 
 
  // filter res array according operation
@@ -33,9 +34,9 @@ function isAddition(res,str){
 function addition(str){
   let SplitNumbers = str.split("+");
   let sum = parseFloat(SplitNumbers[0])+parseFloat(SplitNumbers[1]);
-  console.log("sum="+sum);
+  return(sum);
+  //console.log("sum="+sum);
  } 
-//---------------------------------------------------------------------------
 //--------------- Subtraction functions ---------------------------------
 //IsSubtraction
 function isSubtraction(res,str){
@@ -49,7 +50,6 @@ function isSubtraction(res,str){
 function sub(str){
   console.log("hi from sub method ");
  } 
-//---------------------------------------------------------------------------
 //--------------- Multiplication functions ---------------------------------
 //IsMult
 function isMult(res,str){
@@ -62,7 +62,6 @@ function isMult(res,str){
 //Mult
 function mult(str){
  } 
-//---------------------------------------------------------------------------
 //--------------- Module functions ---------------------------------
 //IsModule
 function isModule(res,str){
@@ -75,7 +74,6 @@ function isModule(res,str){
 //Module
 function mod(str){
  } 
-//---------------------------------------------------------------------------
 //---------------Division functions ---------------------------------
 //IsModule
 function isDiv(res,str){
@@ -91,4 +89,3 @@ function div(str){
 //---------------------------------------------------------------------------
 
 readFromConsoleAndSplit(); 
-
