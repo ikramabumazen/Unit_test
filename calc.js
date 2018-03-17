@@ -7,19 +7,9 @@ stdin.addListener("data", function(d) {
 var res = str.split("");
 
  // filter res array according operation
-isAddition(res, str);       
-//--Subtraction--
-let sub = res.filter(item =>
-  item == "-");
-  if (sub.length !=0) {
-   console.log("sub()");
-   }
-//------------Multiplication --------------------------
-let mult = res.filter(item =>
-  item == "*");
-  if (mult.length !=0) {
-   console.log("multiply()");
-   }             
+isAddition(res, str);   
+isSubtraction(res.str);    
+isMult(res,str);
 
 //------------Division --------------------------
 let dev = res.filter(item =>
@@ -50,7 +40,7 @@ function addition(str){
  } 
 //---------------------------------------------------------------------------
 //--------------- Subtraction functions ---------------------------------
-//Isaddition 
+//IsSubtraction
 function isSubtraction(res,str){
   let sub = res.filter(item =>item == "-");
     if (sub.length !=0) {
@@ -58,10 +48,22 @@ function isSubtraction(res,str){
     }
     else return ;
 }
-//addition
+//subtraction
 function sub(str){
  } 
 //---------------------------------------------------------------------------
-
+//--------------- Multiplication functions ---------------------------------
+//IsMult
+function isMult(res,str){
+  let mult = res.filter(item =>item == "-");
+    if (mult.length !=0) {
+      mult(str);
+    }
+    else return ;
+}
+//Mult
+function mult(str){
+ } 
+//---------------------------------------------------------------------------
 readFromConsoleAndSplit(); 
 
