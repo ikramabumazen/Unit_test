@@ -1,6 +1,6 @@
 
+function readFromConsole(){
 var stdin = process.openStdin();
-
 stdin.addListener("data", function(d) {
     // note:  d is an object, and when converted to a string it will
     // end with a linefeed.  so we (rather crudely) account for that  
@@ -8,4 +8,4 @@ stdin.addListener("data", function(d) {
     console.log("you entered: [" + 
         d.toString().trim() + "]");
   });
-
+}//readFromConsole()
