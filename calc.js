@@ -35,6 +35,12 @@ let dev = res.filter(item =>
   if (dev.length !=0) {
    console.log("divide()");
    }
+//------------Module --------------------------
+let mod = res.filter(item =>
+  item == "%");
+  if (mod.length !=0) {
+   console.log("module()");
+   }
 
   });              
 }//readFromConsole()
