@@ -15,3 +15,6 @@
 6- each operation has its test cases.
 7- if user entered more than two nubers (and one operation) throw an exception with this operation.     
 
+During programming :
+1- read string from console 
+2- split string by operation
